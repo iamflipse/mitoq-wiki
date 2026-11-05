@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Mitochondrial Aging Hallmarks &amp; ROS Generation - MitoQ &amp; Age-Related Physiological Dysfunction — Wiki</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A curated wiki on MitoQ, a mitochondria-targeted antioxidant, in age-related physiological dysfunction (GeroScience 2026)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Wiki Home</a></li><li class="chapter-item expanded affix "><a href="../about.html">About the Paper</a></li><li class="chapter-item expanded affix "><li class="part-title">Concepts</li><li class="chapter-item expanded "><a href="../concepts/mitochondrial-aging-hallmarks.html" class="active"><strong aria-hidden="true">1.</strong> Mitochondrial Aging Hallmarks & ROS Generation</a></li><li class="chapter-item expanded "><a href="../concepts/mitoq-chemistry.html"><strong aria-hidden="true">2.</strong> MitoQ: Chemistry & Mitochondrial Targeting</a></li><li class="chapter-item expanded "><a href="../concepts/cardiovascular.html"><strong aria-hidden="true">3.</strong> MitoQ & Cardiovascular Function</a></li><li class="chapter-item expanded "><a href="../concepts/neuronal.html"><strong aria-hidden="true">4.</strong> MitoQ & Neuronal Function</a></li><li class="chapter-item expanded "><a href="../concepts/skeletal-muscle.html"><strong aria-hidden="true">5.</strong> MitoQ & Skeletal Muscle</a></li><li class="chapter-item expanded "><a href="../concepts/lower-urinary-tract.html"><strong aria-hidden="true">6.</strong> MitoQ & Lower Urinary Tract Dysfunction</a></li><li class="chapter-item expanded affix "><li class="part-title">Source</li><li class="chapter-item expanded "><a href="../sources/mitoq-fulltext.html"><strong aria-hidden="true">7.</strong> Full Text</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">MitoQ &amp; Age-Related Physiological Dysfunction — Wiki</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="mitochondrial-aging-hallmarks--ros-generation"><a class="header" href="#mitochondrial-aging-hallmarks--ros-generation">Mitochondrial Aging Hallmarks &amp; ROS Generation</a></h1>
+<p><em>Source: <a href="../sources/mitoq-fulltext.html">§2 of the paper</a></em></p>
+<p>Aging mitochondria show a self-amplifying damage cycle. The paper identifies four age-related mitochondrial alterations that generate ROS:</p>
+<h2 id="etc-dysfunction"><a class="header" href="#etc-dysfunction">ETC dysfunction</a></h2>
+<ul>
+<li>The ETC (complexes I–IV + ATP synthase) is the primary source of both ATP and &quot;incidental&quot; ROS (superoxide at complexes I and III).</li>
+<li>With age: <strong>ROS impairs complex I</strong> by altering the redox state of iron-sulfur clusters (↓ electron transfer efficiency, ↓ catalytic activity).</li>
+<li>ROS <strong>peroxidizes cardiolipin</strong> — a phospholipid essential for inner-membrane organization and respiratory-complex stability; cardiolipin damage destabilizes complex assembly.</li>
+<li><strong>Oxidative damage to mtDNA</strong> reduces expression/assembly of mitochondrially encoded respiratory subunits.</li>
+<li>Result: a <strong>feed-forward cycle</strong> — ROS-induced ETC dysfunction amplifies mtROS production → ↓ATP, partial dissipation of membrane potential, disrupted redox balance → impairs energy-dependent processes (fusion/fission, Ca²⁺ uptake) and activates redox-sensitive inflammatory pathways.</li>
+</ul>
+<h2 id="altered-mitochondrial-dynamics"><a class="header" href="#altered-mitochondrial-dynamics">Altered mitochondrial dynamics</a></h2>
+<ul>
+<li><strong>Fusion</strong> (OPA1 inner membrane; MFN1/MFN2 outer membrane) exchanges proteins/mtDNA; <strong>fission</strong> (FIS1, DRP1) fragments damaged mitochondria for clearance.</li>
+<li>In aged skeletal muscle: <strong>↓OPA1</strong> (sarcopenia link; OPA1 knockout mice show premature-aging phenotype); <strong>OMa1</strong> (oxidative-stress-activated inner-membrane protease) cleaves long OPA1 into short inactive fragments; <strong>↓MFN2</strong> in aged muscle disrupts metabolic homeostasis.</li>
+<li>ROS modifies fission regulators: aberrant <strong>DRP1</strong> phosphorylation/recruitment, ↓FIS1 expression/function.</li>
+<li>Aging models show <strong>hyperfused, elongated mitochondrial networks</strong> with inhibited fission → sustained mtROS production.</li>
+</ul>
+<h2 id="calcium-dysregulation"><a class="header" href="#calcium-dysregulation">Calcium dysregulation</a></h2>
+<ul>
+<li>Physiological Ca²⁺ handling: ER stores Ca²⁺; IP3R–GRP75–VDAC channeling into mitochondria via MCU; efflux via <strong>NCLX/HCX</strong>.</li>
+<li>Excess ROS <strong>oxidizes redox-sensitive residues</strong> in IP3R, VDAC, and MCU components → disrupted ER→mitochondria Ca²⁺ transfer → progressive intramitochondrial Ca²⁺ accumulation.</li>
+<li>Excess matrix Ca²⁺ increases <strong>mPTP</strong> (mitochondrial permeability transition pore) sensitivity; sustained mPTP opening collapses membrane potential → impairs OXPHOS, increases electron leak and ROS.</li>
+<li><strong>mPTP Ca²⁺ vulnerability increases with age</strong> — key aging hallmark of mitochondria.</li>
+</ul>
+<h2 id="mitochondrial-ros--inflammaging-nlrp3"><a class="header" href="#mitochondrial-ros--inflammaging-nlrp3">Mitochondrial ROS → inflammaging (NLRP3)</a></h2>
+<ul>
+<li>Immune impairment + chronic low-grade inflammation (<strong>inflammaging</strong>) is a hallmark of aging; the <strong>NLRP3 inflammasome</strong> is the central regulator.</li>
+<li>NLRP3 activation is two-step: <strong>priming</strong> (PAMPs/DAMPs → TLRs → NF-κB transcription of NLRP3) + <strong>activation</strong> (membrane damage, K⁺ efflux, mitochondrial dysfunction → NLRP3–ASC–caspase-1 assembly → IL-1β/IL-18 maturation, GSDMD pyroptosis).</li>
+<li><strong>mtROS is an activator of NLRP3 priming</strong>: mtROS enhances TLR4–MyD88 signaling → NLRP3 deubiquitination; rotenone-induced mtROS ↑NLRP3 activation; <strong>mitochondrial-targeted antioxidants significantly reduce NLRP3 activation</strong> — mtROS acts as a signaling mediator, not a passive byproduct.</li>
+<li>The resulting inflammatory loop (GSDMD pores releasing DAMPs) sustains chronic inflammation.</li>
+</ul>
+<p><strong>Cross-links:</strong> <a href="mitoq-chemistry.html">MitoQ chemistry</a> · <a href="cardiovascular.html">Cardiovascular</a> · <a href="neuronal.html">Neuronal</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../about.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../concepts/mitoq-chemistry.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../about.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../concepts/mitoq-chemistry.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
